@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#b30e6e;
+    text-decoration:none;
+}
+
+.navbar a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#333;
+    font-size:18px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#b30e6e;
+}
+
+.home,
+.about,
+.services,
+.portfolio,
+.contact{
+    min-height:100vh;
+    padding:120px 10% 60px;
+}
+
+.home{
+    display:flex;
+    align-items:center;
+    background:linear-gradient(to right,#ffffff,#f8d7e8);
+}
+
+.home-content{
+    max-width:700px;
+}
+
+.home-content h1{
+    font-size:50px;
+    color:#7114db;
+}
+
+.home-content h3{
+    font-size:30px;
+    color:#b30e6e;
+    margin:10px 0;
+}
+
+.home-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+}
+
+.home-sci{
+    margin:25px 0;
+}
+
+.home-sci a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:45px;
+    height:45px;
+    border:2px solid #7114db;
+    border-radius:50%;
+    color:#7114db;
+    margin-right:15px;
+    text-decoration:none;
+    font-size:22px;
+    transition:.4s;
+}
+
+.home-sci a:hover{
+    background:#7114db;
+    color:#fff;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#b30e6e;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#7114db;
+}
+
+.about h2,
+.services h2,
+.portfolio h2,
+.contact h2{
+    text-align:center;
+    font-size:38px;
+    color:#7114db;
+    margin-bottom:25px;
+}
+
+.about-content,
+.services-content,
+.portfolio-content,
+.contact-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.about p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.about ul{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.about li{
+    margin:8px 0;
+}
+
+.service-box,
+.project-box{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    margin:20px 0;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-box h3,
+.project-box h3{
+    color:#b30e6e;
+    margin-bottom:10px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact button{
+    width:220px;
+    border:none;
+    cursor:pointer;
+}
+
+.contact-details{
+    margin-top:30px;
+    font-size:18px;
+}
+
+.contact-details p{
+    margin:10px 0;
+}
+
+@media(max-width:768px){
+
+.header{
+    flex-direction:column;
+}
+
+.navbar{
+    margin-top:15px;
+}
+
+.navbar a{
+    margin:0 10px;
+    font-size:16px;
+}
+
+.home-content h1{
+    font-size:35px;
+}
+
+.home-content h3{
+    font-size:24px;
+}
+
+.about h2,
+.services h2,
+.portfolio h2,
+.contact h2{
+    font-size:30px;
+}
+
+}
