@@ -44,8 +44,7 @@ function Home() {
             <i className="bx bx-envelope"></i>
           </a>
         </div>
-
-        <a href="/Mohanasundaram_CV.pdf" download className="btn">
+        <a href={`${process.env.PUBLIC_URL}/Mohanasundaram_CV.pdf`} download>
         Download CV
         </a>
       </div>
