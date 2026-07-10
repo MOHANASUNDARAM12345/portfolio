@@ -64,6 +64,7 @@ function Home() {
           className="cv-btn"
         >
           <i className="bx bx-download"></i>
+          <span>Download</span>
           Download CV
         </a>
       </div>
