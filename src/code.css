@@ -226,5 +226,37 @@ body{
 .contact h2{
     font-size:30px;
 }
+.cv-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:30px;
+    padding:14px 32px;
+    background:linear-gradient(135deg,#7114db,#b30e6e);
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    border-radius:50px;
+    border:2px solid transparent;
+    transition:all .3s ease;
+    box-shadow:0 8px 20px rgba(113,20,219,.35);
+}
 
+.cv-btn i{
+    font-size:22px;
+}
+
+.cv-btn:hover{
+    background:#fff;
+    color:#7114db;
+    border:2px solid #7114db;
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(113,20,219,.45);
+}
+
+.cv-btn:active{
+    transform:scale(0.96);
+}
 }

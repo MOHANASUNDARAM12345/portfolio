@@ -29,23 +29,42 @@ function Home() {
         </p>
 
         <div className="home-sci">
-          <a href="https://leetcode.com/u/MOHANASUNDARAM-V/" target="_blank" rel="noreferrer">
+          <a
+            href="https://leetcode.com/u/MOHANASUNDARAM-V/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="bx bx-code-alt"></i>
           </a>
 
-          <a href="https://github.com/MOHANASUNDARAM12345" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/MOHANASUNDARAM12345"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="bx bxl-github"></i>
           </a>
 
-          <a href="https://www.linkedin.com/in/mohanasundaram-v-237846356?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/mohanasundaram-v-237846356"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="bx bxl-linkedin"></i>
           </a>
+
           <a href="mailto:sundaramm838@gmail.com">
             <i className="bx bx-envelope"></i>
           </a>
         </div>
-        <a href={`${process.env.PUBLIC_URL}/Mohanasundaram_CV.pdf`} download>
-        Download CV
+
+        <a
+          href={`${process.env.PUBLIC_URL}/Mohanasundaram_CV.pdf`}
+          download
+          className="cv-btn"
+        >
+          <i className="bx bx-download"></i>
+          Download CV
         </a>
       </div>
     </section>
