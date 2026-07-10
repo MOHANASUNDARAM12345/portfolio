@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./code.css";
+import profile from "./images/myphoto.jpg";
 
 function Home() {
   useEffect(() => {
@@ -16,8 +17,10 @@ function Home() {
 
   return (
     <section id="home" className="home">
+
       <div className="home-content">
-        <h1>Hi, I'm Mohanasundaram V</h1>
+
+        <h1>Hi,I'm MOHANASUNDARAM</h1>
 
         <h3>Web Developer</h3>
 
@@ -29,6 +32,7 @@ function Home() {
         </p>
 
         <div className="home-sci">
+
           <a
             href="https://leetcode.com/u/MOHANASUNDARAM-V/"
             target="_blank"
@@ -56,6 +60,7 @@ function Home() {
           <a href="mailto:sundaramm838@gmail.com">
             <i className="bx bx-envelope"></i>
           </a>
+
         </div>
 
         <a
@@ -64,10 +69,15 @@ function Home() {
           className="cv-btn"
         >
           <i className="bx bx-download"></i>
-          <span>Download</span>
-          Download CV
+          <span>Download CV</span>
         </a>
+
       </div>
+
+      <div className="home-image">
+        <img src={profile} alt="Mohanasundaram" />
+      </div>
+
     </section>
   );
 }

@@ -17,8 +17,9 @@ body{
     top:0;
     left:0;
     width:100%;
-    padding:20px 10%;
-    background:#fff;
+    padding:20px 8%;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -27,10 +28,11 @@ body{
 }
 
 .logo{
-    font-size:28px;
+    font-size:24px;
     font-weight:700;
-    color:#b30e6e;
+    color:#2563EB;
     text-decoration:none;
+    white-space: nowrap;
 }
 
 .navbar a{
@@ -42,7 +44,7 @@ body{
 }
 
 .navbar a:hover{
-    color:#b30e6e;
+    color:#7C3AED;;
 }
 
 .home,
@@ -53,32 +55,56 @@ body{
     min-height:100vh;
     padding:120px 10% 60px;
 }
-
 .home{
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    background:linear-gradient(to right,#ffffff,#f8d7e8);
+    min-height:100vh;
+    padding:120px 10% 60px;
+    background:linear-gradient(135deg,#EFF6FF,#F5F3FF,#FFFFFF);
+    gap:60px;
+}
+.home-content{
+    flex:1;
+    max-width:700px;
+}
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.home-content{
-    max-width:700px;
+.home-image img{
+    width:380px;
+    height:380px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #7114db;
+    box-shadow:0 15px 40px rgba(113,20,219,.35);
+    transition:.4s;
+}
+
+.home-image img:hover{
+    transform:scale(1.05);
 }
 
 .home-content h1{
-    font-size:50px;
-    color:#7114db;
+    font-size:58px;
+    color:#0F172A;
+    font-weight:700;
 }
 
 .home-content h3{
     font-size:30px;
-    color:#b30e6e;
+    color:#2563EB;
     margin:10px 0;
 }
 
 .home-content p{
     font-size:18px;
-    line-height:1.8;
-    color:#444;
+    line-height:1.9;
+    color:#475569;
 }
 
 .home-sci{
@@ -91,9 +117,9 @@ body{
     align-items:center;
     width:45px;
     height:45px;
-    border:2px solid #7114db;
+    border:2px solid #2563EB;
     border-radius:50%;
-    color:#7114db;
+    color:#2563EB;
     margin-right:15px;
     text-decoration:none;
     font-size:22px;
@@ -101,8 +127,9 @@ body{
 }
 
 .home-sci a:hover{
-    background:#7114db;
-    color:#fff;
+    background:#2563EB;
+    color:white;
+    transform:translateY(-8px);
 }
 
 .btn{
@@ -198,33 +225,41 @@ body{
 }
 
 @media(max-width:768px){
-
-.header{
-    flex-direction:column;
-}
-
-.navbar{
-    margin-top:15px;
-}
-
-.navbar a{
-    margin:0 10px;
-    font-size:16px;
-}
-
-.home-content h1{
-    font-size:35px;
-}
-
-.home-content h3{
-    font-size:24px;
-}
-
-.about h2,
-.services h2,
-.portfolio h2,
-.contact h2{
-    font-size:30px;
+    .header{
+        flex-direction:column;
+    }
+    .navbar{
+        margin-top:15px;
+    }
+    .navbar a{
+        margin:0 10px;
+        font-size:16px;
+    }
+    .home-content h1{
+        font-size:35px;
+    }
+    .home-content h3{
+        font-size:24px;
+    }
+    .about h2,
+    .services h2,
+    .portfolio h2,
+    .contact h2{
+        font-size:30px;
+    }
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+    .home-image img{
+        width:250px;
+        height:250px;
+        margin-bottom:30px;
+    }
+    .home-sci{
+        display:flex;
+        justify-content:center;
+    }
 }
 .cv-btn{
     display:inline-flex;
@@ -233,7 +268,7 @@ body{
     gap:10px;
     margin-top:30px;
     padding:14px 32px;
-    background:linear-gradient(135deg,#7114db,#b30e6e);
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
     color:#fff;
     text-decoration:none;
     font-size:18px;
@@ -243,20 +278,16 @@ body{
     transition:all .3s ease;
     box-shadow:0 8px 20px rgba(113,20,219,.35);
 }
-
 .cv-btn i{
     font-size:22px;
 }
-
 .cv-btn:hover{
-    background:#fff;
-    color:#7114db;
-    border:2px solid #7114db;
+    background:white;
+    color:#2563EB;
+    border:2px solid #2563EB;
     transform:translateY(-4px);
     box-shadow:0 12px 25px rgba(113,20,219,.45);
 }
-
 .cv-btn:active{
     transform:scale(0.96);
-}
 }
