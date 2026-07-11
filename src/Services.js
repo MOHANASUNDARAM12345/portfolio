@@ -5,39 +5,68 @@ function Services() {
   return (
     <section id="services" className="services">
       <div className="services-content">
+
         <h2>My Services</h2>
+        <p className="subtitle">
+          What I Can Do
+        </p>
 
-        <div className="service-box">
-          <h3>Web Development</h3>
-          <p>
-            I create responsive and user-friendly websites using
-            HTML, CSS, JavaScript and React.
-          </p>
+        <div className="services-grid">
+
+          <div className="service-card">
+            <div className="service-icon">
+              <i className="bx bx-code-alt"></i>
+            </div>
+
+            <h3>Web Development</h3>
+
+            <p>
+              Build responsive, modern and user-friendly websites using
+              HTML, CSS, JavaScript and React.js.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <i className="bx bxl-java"></i>
+            </div>
+
+            <h3>Java Development</h3>
+
+            <p>
+              Develop Java applications using Object-Oriented Programming,
+              Collections and problem-solving concepts.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <i className="bx bx-data"></i>
+            </div>
+
+            <h3>Database Management</h3>
+
+            <p>
+              Design and manage MySQL databases with efficient queries,
+              relationships and data storage.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <i className="bx bxl-react"></i>
+            </div>
+
+            <h3>Frontend Development</h3>
+
+            <p>
+              Create attractive, responsive user interfaces using
+              React.js with reusable components.
+            </p>
+          </div>
+
         </div>
 
-        <div className="service-box">
-          <h3>Java Programming</h3>
-          <p>
-            I develop Java applications using Object-Oriented
-            Programming concepts.
-          </p>
-        </div>
-
-        <div className="service-box">
-          <h3>Database Management</h3>
-          <p>
-            I design and manage databases using MySQL for efficient
-            data storage and retrieval.
-          </p>
-        </div>
-
-        <div className="service-box">
-          <h3>Frontend Development</h3>
-          <p>
-            I build modern and attractive user interfaces using
-            React JS and CSS.
-          </p>
-        </div>
       </div>
     </section>
   );

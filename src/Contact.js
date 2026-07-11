@@ -4,45 +4,97 @@ import "./code.css";
 function Contact() {
   return (
     <section id="contact" className="contact">
+
       <div className="contact-content">
+
         <h2>Contact Me</h2>
 
-        <form>
-          <input
-            type="text"
-            placeholder="Enter Your Name"
-            required
-          />
+        <p className="contact-subtitle">
+          Let's connect! Feel free to reach out for internships,
+          projects or collaboration.
+        </p>
 
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            required
-          />
+        <div className="contact-container">
 
-          <input
-            type="text"
-            placeholder="Enter Subject"
-            required
-          />
+          <div className="contact-info">
 
-          <textarea
-            rows="6"
-            placeholder="Enter Your Message"
-          ></textarea>
+            <div className="info-box">
+              <i className="bx bx-user"></i>
+              <div>
+                <h3>Name</h3>
+                <p>Mohanasundaram V</p>
+              </div>
+            </div>
 
-          <button type="submit" className="btn">
-            Send Message
-          </button>
-        </form>
+            <div className="info-box">
+              <i className="bx bx-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>sundaramm838@gmail.com</p>
+              </div>
+            </div>
 
-        <div className="contact-details">
-          <p><strong>Name:</strong> Mohanasundaram V</p>
-          <p><strong>Email:</strong> sundaramm838@gmail.com</p>
-          <p><strong>Phone:</strong> +91 8778704084</p>
-          <p><strong>Location:</strong> Tamil Nadu, India</p>
+            <div className="info-box">
+              <i className="bx bx-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+91 8778704084</p>
+              </div>
+            </div>
+
+            <div className="info-box">
+              <i className="bx bx-map"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <div className="info-box">
+              <i className="bx bx-briefcase"></i>
+              <div>
+                <h3>Status</h3>
+                <p>Available for Internship</p>
+              </div>
+            </div>
+
+          </div>
+
+          <form>
+
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              required
+            />
+
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              required
+            />
+
+            <input
+              type="text"
+              placeholder="Enter Subject"
+              required
+            />
+
+            <textarea
+              rows="6"
+              placeholder="Enter Your Message"
+            ></textarea>
+
+            <button type="submit" className="btn">
+              <i className="bx bx-send"></i> Send Message
+            </button>
+
+          </form>
+
         </div>
+
       </div>
+
     </section>
   );
 }

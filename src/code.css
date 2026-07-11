@@ -179,51 +179,344 @@ body{
 .about li{
     margin:8px 0;
 }
-
-.service-box,
-.project-box{
-    background:#fff;
-    padding:20px;
-    border-radius:10px;
-    margin:20px 0;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.about{
+    background:linear-gradient(135deg,#f8fafc,#eef2ff);
 }
 
-.service-box h3,
-.project-box h3{
-    color:#b30e6e;
-    margin-bottom:10px;
+.subtitle{
+    text-align:center;
+    color:#64748B;
+    font-size:18px;
+    margin-bottom:30px;
+    font-weight:500;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.about-content p{
+    font-size:18px;
+    line-height:1.9;
+    color:#475569;
+}
+
+.about h3{
+    margin-top:35px;
+    margin-bottom:20px;
+    color:#0F172A;
+    font-size:28px;
+}
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 22px;
+    background:#ffffff;
+    border:1px solid #dbeafe;
+    border-radius:30px;
+    color:#2563EB;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:all .3s ease;
+    cursor:pointer;
+}
+
+.skill i{
+    font-size:24px;
+}
+
+.skill:hover{
+    background:#2563EB;
+    color:#ffffff;
+    transform:translateY(-5px);
+}
+
+.java-icon{
+    display:flex;
+    align-items:center;
+}
+
+.java-icon i{
+    font-size:26px;
+    animation:steam 2s ease-in-out infinite;
+}
+
+@keyframes steam{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-4px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.services{
+    background:linear-gradient(135deg,#F8FAFC,#EEF2FF,#FFFFFF);
+}
+
+.services-content{
+    max-width:1200px;
+    margin:auto;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.service-card{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+    border-top:5px solid #2563EB;
+}
+
+.service-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 18px 35px rgba(37,99,235,.20);
+}
+
+.service-icon{
+    width:75px;
+    height:75px;
+    margin:auto;
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+    transition:transform .8s;
+}
+
+.service-icon i{
+    font-size:38px;
+    color:#fff;
+}
+
+.service-card h3{
+    color:#7114db;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.service-card p{
+    color:#555;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.service-card:hover .service-icon{
+    transform:rotate(360deg);
+}
+/* ===================== Projects ===================== */
+
+.portfolio{
+    background:linear-gradient(135deg,#ffffff,#f8fafc,#eef2ff);
+}
+
+.portfolio-content{
+    max-width:1200px;
+    margin:auto;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:50px;
+}
+
+.project-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border-top:5px solid #7C3AED;
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(124,58,237,.25);
+}
+
+.project-icon{
+    width:75px;
+    height:75px;
+    margin:auto;
+    margin-bottom:20px;
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.6s;
+}
+
+.project-card:hover .project-icon{
+    transform:rotate(360deg);
+}
+
+.project-icon i{
+    color:#fff;
+    font-size:36px;
+}
+
+.project-card h3{
+    color:#7114db;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.project-card p{
+    color:#555;
+    line-height:1.8;
+}
+
+.tech-stack{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+}
+
+.tech-stack span{
+    background:#EEF2FF;
+    color:#2563EB;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.tech-stack span:hover{
+    background:#2563EB;
+    color:#fff;
+}
+
+.contact{
+    background:linear-gradient(135deg,#F8FAFC,#EEF2FF,#FFFFFF);
+}
+
+.contact-subtitle{
+    text-align:center;
+    color:#64748B;
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.info-box{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:#fff;
+    padding:18px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.info-box:hover{
+    transform:translateY(-5px);
+}
+
+.info-box i{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
+}
+
+.info-box h3{
+    color:#7114db;
+    margin-bottom:5px;
+}
+
+.info-box p{
+    color:#555;
 }
 
 .contact form{
-    display:flex;
-    flex-direction:column;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .contact input,
 .contact textarea{
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:8px;
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
     font-size:16px;
 }
 
+.contact input:focus,
+.contact textarea:focus{
+    outline:none;
+    border:2px solid #2563EB;
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+}
+
 .contact button{
-    width:220px;
-    border:none;
-    cursor:pointer;
+    width:100%;
 }
 
-.contact-details{
-    margin-top:30px;
-    font-size:18px;
+@media(max-width:900px){
+
+.contact-container{
+    grid-template-columns:1fr;
 }
 
-.contact-details p{
-    margin:10px 0;
 }
-
+@media(max-width:1200px){
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+    
+}
 @media(max-width:768px){
     .header{
         flex-direction:column;
@@ -260,6 +553,9 @@ body{
         display:flex;
         justify-content:center;
     }
+    /*.projects-grid{
+        grid-template-columns:1fr;
+    }*/
 }
 .cv-btn{
     display:inline-flex;
