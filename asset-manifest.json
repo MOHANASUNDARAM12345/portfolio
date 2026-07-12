@@ -1,29 +1,37 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7342a887.css",
-    "main.js": "/portfolio/static/js/main.5609c2a8.js",
+    "main.css": "/portfolio/static/css/main.c55b0773.css",
+    "main.js": "/portfolio/static/js/main.b524ca1c.js",
     "static/js/453.a7d99afe.chunk.js": "/portfolio/static/js/453.a7d99afe.chunk.js",
     "static/media/myphoto.jpg": "/portfolio/static/media/myphoto.1700dbb26a6397fe12c5.jpg",
     "static/media/school12.jpg": "/portfolio/static/media/school12.ff3443fd2564daa5946a.jpg",
     "static/media/sslc.jpg": "/portfolio/static/media/sslc.3fdaeb354ad5e2551088.jpg",
     "static/media/exhibition.jpg": "/portfolio/static/media/exhibition.3a10205c5207f5b41d5a.jpg",
     "static/media/hsc.jpg": "/portfolio/static/media/hsc.595a7dc88806934acc61.jpg",
+    "static/media/mepro-level10.jpg": "/portfolio/static/media/mepro-level10.2e12350ae2e74882955e.jpg",
     "static/media/jrc.jpg": "/portfolio/static/media/jrc.cecd484c8d7d12a7a8fd.jpg",
     "static/media/speech.jpg": "/portfolio/static/media/speech.7d2ed579a8e39a225eb4.jpg",
     "static/media/sports.jpg": "/portfolio/static/media/sports.4ccd795faafd535f4df2.jpg",
     "static/media/class6.jpg": "/portfolio/static/media/class6.e2cfd1c7db1a4dadee82.jpg",
     "static/media/techfest2025.jpg": "/portfolio/static/media/techfest2025.7376829bdb77a1be0481.jpg",
+    "static/media/aicte-sla.jpg": "/portfolio/static/media/aicte-sla.3aec801c96f6fe003da1.jpg",
+    "static/media/efset-english-b1.jpg": "/portfolio/static/media/efset-english-b1.3aec801c96f6fe003da1.jpg",
+    "static/media/c-programming-iitb.jpg": "/portfolio/static/media/c-programming-iitb.aab68b15acc15f93f146.jpg",
+    "static/media/linux-programming-iitb.jpg": "/portfolio/static/media/linux-programming-iitb.49fd2b7a93e59a48339b.jpg",
+    "static/media/java-programming-iitb.jpg": "/portfolio/static/media/java-programming-iitb.a1af56f8a169e2e1f4c7.jpg",
     "static/media/reach26.jpg": "/portfolio/static/media/reach26.b3338f9ef2fd76f37945.jpg",
+    "static/media/css-iitb.jpg": "/portfolio/static/media/css-iitb.2f7d7a2df8d5fc8a8efb.jpg",
+    "static/media/python-iit-bombay.jpg": "/portfolio/static/media/python-iit-bombay.8a1d6c57d0d8cd99b15f.jpg",
     "static/media/school10.jpg": "/portfolio/static/media/school10.235b39c71b1d166bb070.jpg",
     "static/media/college.jpg": "/portfolio/static/media/college.6bd6638d8d4e4f28cba2.jpg",
     "static/media/future-job.jpg": "/portfolio/static/media/future-job.218a8f645e539e2c53dc.jpg",
     "index.html": "/portfolio/index.html",
-    "main.7342a887.css.map": "/portfolio/static/css/main.7342a887.css.map",
-    "main.5609c2a8.js.map": "/portfolio/static/js/main.5609c2a8.js.map",
+    "main.c55b0773.css.map": "/portfolio/static/css/main.c55b0773.css.map",
+    "main.b524ca1c.js.map": "/portfolio/static/js/main.b524ca1c.js.map",
     "453.a7d99afe.chunk.js.map": "/portfolio/static/js/453.a7d99afe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7342a887.css",
-    "static/js/main.5609c2a8.js"
+    "static/css/main.c55b0773.css",
+    "static/js/main.b524ca1c.js"
   ]
 }
