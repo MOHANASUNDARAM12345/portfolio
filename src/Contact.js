@@ -101,6 +101,7 @@ function Contact() {
               type="text"
               name="subject"
               placeholder="Enter Subject"
+
               required
             />
 

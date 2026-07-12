@@ -344,7 +344,34 @@ body{
     gap:25px;
     margin-top:50px;
 }
+.projects{
+    padding:80px 10%;
+    text-align:center;
+}
 
+.portfolio-content{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.projects h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.projects .subtitle{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:30px;
+    justify-content:center;
+}
 .project-card{
     background:#fff;
     padding:30px;

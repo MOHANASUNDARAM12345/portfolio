@@ -12,8 +12,10 @@ function Header() {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
+        <a href="#school-achievements">School Achievements</a>
+        <a href="#college-achievements">College Achievements</a>
         <a href="#services">Services</a>
-        <a href="#project">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>

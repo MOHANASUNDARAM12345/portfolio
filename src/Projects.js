@@ -1,9 +1,9 @@
 import React from "react";
 import "./code.css";
 
-function Portfolio() {
+function Projects() {
   return (
-    <section id="portfolio" className="portfolio">
+    <section id="projects" className="projects">
       <div className="portfolio-content">
 
         <h2>My Projects</h2>
@@ -126,4 +126,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;
