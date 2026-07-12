@@ -1,8 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState} from "react";
 import "./code.css";
 import profile from "./images/myphoto.jpg";
 
 function Home() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const handleDownload = async () => {
+    if (!name.trim() || !email.trim()) {
+      alert("Please enter your Name and Email");
+      return;
+    }
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyOlhyhY8g4pxs1xCqCe8kH7Io2ZBe7Anm7v8-8oVE7Z31AZA52VVDKqvxknLJQJNd8/exec",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            name: name,
+            email: email,
+          }),
+        }
+      );
+      const link = document.createElement("a");
+      link.href = `${process.env.PUBLIC_URL}/Mohanasundaram_CV.pdf`;
+      link.download = "Mohanasundaram_CV.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setShowPopup(false);
+      setName("");
+      setEmail("");
+    } catch (error) {
+      alert("Something went wrong");
+      console.log(error);
+    }
+  };
   useEffect(() => {
     const link = document.createElement("link");
     link.href =
@@ -63,22 +96,55 @@ function Home() {
 
         </div>
 
-        <a
-          href={`${process.env.PUBLIC_URL}/Mohanasundaram_CV.pdf`}
-          download
-          className="cv-btn"
+        <button
+        className="cv-btn"
+        onClick={() => setShowPopup(true)}
         >
           <i className="bx bx-download"></i>
           <span>Download CV</span>
-        </a>
+        </button>
 
       </div>
 
       <div className="home-image">
-        <img src={profile} alt="Mohanasundaram" />
+  <img src={profile} alt="Mohanasundaram" />
+</div>
+
+{showPopup && (
+  <div className="popup-overlay">
+    <div className="popup-box">
+
+      <h2>Download Resume</h2>
+
+      <input
+        type="text"
+        placeholder="Enter Your Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+
+      <input
+        type="email"
+        placeholder="Enter Your Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+
+      <div className="popup-buttons">
+        <button onClick={handleDownload}>
+          Submit & Download
+        </button>
+
+        <button onClick={() => setShowPopup(false)}>
+          Cancel
+        </button>
       </div>
 
-    </section>
+    </div>
+  </div>
+)}
+
+</section>
   );
 }
 
