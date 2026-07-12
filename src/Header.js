@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <a href="#home" className="logo">
-        Mohanasundaram V
+      Mohanasundaram V
       </a>
 
       <nav className="navbar">
