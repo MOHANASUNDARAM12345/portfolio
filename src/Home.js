@@ -17,10 +17,18 @@ function Home() {
       /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
         ? "Mobile"
         : "Desktop";
-    const browser = navigator.userAgent;
+    const browser =
+    navigator.userAgent.includes("Chrome") ? "Chrome" :
+    navigator.userAgent.includes("Firefox") ? "Firefox" :
+    navigator.userAgent.includes("Edg") ? "Edge" :
+    navigator.userAgent.includes("Safari") ? "Safari" :
+    "Unknown";
     const os =
-    navigator.userAgentData?.platform ||
-    navigator.platform ||
+    /Android/i.test(navigator.userAgent) ? "Android" :
+    /iPhone|iPad/i.test(navigator.userAgent) ? "iOS" :
+    /Windows/i.test(navigator.userAgent) ? "Windows" :
+    /Mac/i.test(navigator.userAgent) ? "macOS" :
+    /Linux/i.test(navigator.userAgent) ? "Linux" :
     "Unknown";
     let country = "Unknown";
     let ip = "Unknown";
