@@ -9,6 +9,7 @@ import AssessmentCertificates from "./AssessmentCertificates";
 import Services from "./Services";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Services />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }
