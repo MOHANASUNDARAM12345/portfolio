@@ -33,16 +33,9 @@ function Home() {
     let country = "Unknown";
     let ip = "Unknown";
     try {
-      const response = await fetch("https://ipinfo.io/json");
+      const response = await fetch("https://ipapi.co/json/");
       const data = await response.json();
-      const countryNames = {
-        IN: "India",
-        US: "United States",
-        GB: "United Kingdom",
-        CA: "Canada",
-        AU: "Australia",
-      };
-      country = countryNames[data.country] || data.country || "Unknown";
+      country = data.country_name || "Unknown";
       ip = data.ip || "Unknown";
     } catch (error) {
       console.log("Unable to get IP and Country");
