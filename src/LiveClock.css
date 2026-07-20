@@ -1,0 +1,36 @@
+.live-clock{
+  position:fixed;
+  left:20px;
+  bottom:20px;
+  background:rgba(15,23,42,0.9);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:12px;
+  text-align:center;
+  backdrop-filter:blur(10px);
+  box-shadow:0 4px 15px rgba(0,0,0,.3);
+  z-index:999;
+}
+
+.live-clock h3{
+  margin:0;
+  font-size:1.2rem;
+}
+
+.live-clock p{
+  margin-top:5px;
+  font-size:.85rem;
+  color:#cbd5e1;
+}
+
+@media(max-width:768px){
+  .live-clock{
+    left:10px;
+    bottom:10px;
+    padding:10px 14px;
+  }
+
+  .live-clock h3{
+    font-size:1rem;
+  }
+}

@@ -1,0 +1,29 @@
+.weather {
+  width: 300px;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #7114db);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.weather h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.weather h1 {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+.weather h3 {
+  font-size: 20px;
+}
+
+.weather p {
+  font-size: 16px;
+  margin: 8px;
+}

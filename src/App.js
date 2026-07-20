@@ -17,7 +17,7 @@ import ScrollProgress from "./ScrollProgress";
 import FloatingSocial from "./FloatingSocial";
 import CursorGlow from "./CursorGlow";
 import Loader from "./Loader";
-
+import LiveClock from "./LiveClock";
 function App() {
 
   const [loading, setLoading] = useState(true);
@@ -49,7 +49,7 @@ function App() {
       <ScrollProgress />
 
       <FloatingSocial />
-
+      <LiveClock />
       <Header />
 
       <Home />

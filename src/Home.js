@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./code.css";
 import profile from "./images/myphoto.jpg";
+import Weather from "./Weather";
 
 function Home() {
   const [showPopup, setShowPopup] = useState(false);
@@ -153,6 +154,7 @@ function Home() {
       <div className="home-image">
         <img src={profile} alt="Mohanasundaram" />
       </div>
+      <Weather />
             {showPopup && (
         <div className="popup-overlay">
           <div className="popup-box">
