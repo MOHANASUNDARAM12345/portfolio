@@ -14,137 +14,110 @@ function Education() {
         My <span>Education</span>
       </h2>
 
-      <div className="education-container">
+      <div className="table-container">
 
-        {/* 10th */}
+        <table className="education-table">
 
-        <div className="education-card">
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>Qualification</th>
+              <th>Institution</th>
+              <th>Details</th>
+              <th>Status</th>
+            </tr>
+          </thead>
 
-          <img
-            src={school10}
-            alt="10th School"
-            className="education-img"
-          />
+          <tbody>
 
-          <div className="education-content">
+            <tr>
+              <td>
+                <img src={school10} alt="10th" className="table-img" />
+              </td>
 
-            <h3>🏫 SSLC (10th Standard)</h3>
+              <td>SSLC (10th)</td>
 
-            <h4>Infant Jesus Higher Secondary School</h4>
+              <td>
+                Infant Jesus Higher Secondary School
+                <br />
+                Maravanur,Manapparai
+              </td>
 
-            <p>Maravanur</p>
+              <td>Marks : 413 / 500</td>
 
-            <p><strong>Marks :</strong> 413 / 500</p>
+              <td>
+                <span className="completed">Completed</span>
+              </td>
+            </tr>
 
-            <span className="completed">
-              ✅ Completed
-            </span>
+            <tr>
+              <td>
+                <img src={school12} alt="12th" className="table-img" />
+              </td>
 
-          </div>
+              <td>HSC (12th)</td>
 
-        </div>
+              <td>
+                St. Antony's Higher Secondary School
+                <br />
+                Manjampatty,Manapparai
+              </td>
 
-        {/* 12th */}
+              <td>
+                Group : Computer Science
+                <br />
+                Marks : 467 / 600
+              </td>
 
-        <div className="education-card">
+              <td>
+                <span className="completed">Completed</span>
+              </td>
+            </tr>
 
-          <img
-            src={school12}
-            alt="12th School"
-            className="education-img"
-          />
+            <tr>
+              <td>
+                <img src={college} alt="College" className="table-img" />
+              </td>
 
-          <div className="education-content">
+              <td>B.Tech IT</td>
 
-            <h3>💻 HSC (12th Standard)</h3>
+              <td>
+                JJ College of Engineering and Technology
+                <br />
+                Ammapattai,Trichy
+              </td>
 
-            <h4>St. Antony's Higher Secondary School</h4>
+              <td>CGPA : 7.61</td>
 
-            <p>Manjampatty</p>
+              <td>
+                <span className="studying">Pursuing</span>
+              </td>
+            </tr>
 
-            <p>
-              <strong>Group :</strong> Computer Science
-            </p>
+            <tr>
+              <td>
+                <img src={futureJob} alt="Future" className="table-img" />
+              </td>
 
-            <p><strong>Marks :</strong> 467 / 600</p>
+              <td>Career Goal</td>
 
-            <span className="completed">
-              ✅ Completed
-            </span>
+              <td>Aspiring Software Developer</td>
 
-          </div>
+              <td>
+                Full Stack Development <br />
+                Java Development <br />
+                Python Development <br />
+                Web Development
+              </td>
 
-        </div>
+              <td>
+                <span className="career">Ready</span>
+              </td>
+            </tr>
 
-        {/* College */}
+          </tbody>
 
-        <div className="education-card">
-
-          <img
-            src={college}
-            alt="College"
-            className="education-img"
-          />
-
-          <div className="education-content">
-
-            <h3>🎓 B.Tech Information Technology</h3>
-
-            <h4>
-              JJ College of Engineering and Technology
-            </h4>
-
-            <p>CGPA : 7.61</p>
-
-            <span className="studying">
-              🟡 Currently Pursuing
-            </span>
-
-          </div>
-
-        </div>
-
-        {/* Future Career */}
-
-        <div className="education-card future-card">
-
-          <img
-            src={futureJob}
-            alt="Future Career"
-            className="education-img"
-          />
-
-          <div className="education-content">
-
-            <h3>💼 Aspiring Software Developer</h3>
-
-            <p>
-              Currently pursuing
-              <br />
-              <strong>B.Tech Information Technology</strong>
-            </p>
-
-            <h4>Interested In</h4>
-
-            <ul>
-
-              <li>Full Stack Development</li>
-
-              <li>Java Development</li>
-
-              <li>Python Development</li>
-
-              <li>Web Development</li>
-
-            </ul>
-
-            <span className="career">
-              🚀 Ready to Begin My IT Career
-            </span>
-
-          </div>
-
-        </div>
+        </table>
 
       </div>
 

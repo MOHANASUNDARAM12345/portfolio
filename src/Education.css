@@ -1,142 +1,88 @@
 .education{
     min-height:100vh;
-    padding:100px 8% 60px;
+    padding:100px 8%;
     background:linear-gradient(135deg,#F8FAFC,#EEF2FF,#FDF4FF);
 }
 
 .heading{
     text-align:center;
     font-size:42px;
-    margin-bottom:50px;
-    color:#222;
+    margin-bottom:40px;
 }
 
 .heading span{
     color:#7114db;
 }
 
-.education-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+.table-container{
+    overflow-x:auto;
 }
 
-.education-card{
-    background:rgba(255,255,255,0.95);
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.10);
-    transition:.4s;
-    border:1px solid rgba(113,20,219,.08);
-}
-
-.education-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 18px 35px rgba(113,20,219,.22);
-}
-
-.education-img{
+.education-table{
     width:100%;
-    height:220px;
-    object-fit:cover;
-    transition:.4s;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-.education-card:hover .education-img{
-    transform:scale(1.05);
-}
-
-.education-content{
-    padding:22px;
-}
-
-.education-content h3{
-    color:#7114db;
-    margin-bottom:12px;
-    font-size:23px;
-}
-
-.education-content h4{
-    color:#b30e6e;
-    margin-bottom:10px;
+.education-table th{
+    background:#7114db;
+    color:#fff;
+    padding:18px;
     font-size:18px;
 }
 
-.education-content p{
-    margin:8px 0;
-    color:#475569;
-    line-height:1.7;
+.education-table td{
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
 }
 
-.education-content ul{
-    margin-top:12px;
-    padding-left:20px;
+.education-table tr:hover{
+    background:#f8f6ff;
 }
 
-.education-content ul li{
-    margin:8px 0;
-    color:#475569;
+.table-img{
+    width:120px;
+    height:80px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
 .completed{
-    display:inline-block;
-    margin-top:18px;
-    padding:8px 18px;
-    border-radius:25px;
     background:#22c55e;
     color:#fff;
-    font-weight:600;
+    padding:8px 14px;
+    border-radius:20px;
 }
 
 .studying{
-    display:inline-block;
-    margin-top:18px;
-    padding:8px 18px;
-    border-radius:25px;
     background:#f59e0b;
     color:#fff;
-    font-weight:600;
+    padding:8px 14px;
+    border-radius:20px;
 }
 
 .career{
-    display:inline-block;
-    margin-top:20px;
-    padding:10px 18px;
-    border-radius:30px;
     background:linear-gradient(135deg,#2563EB,#7114db);
     color:#fff;
-    font-weight:600;
-}
-
-.future-card{
-    border:2px dashed #7114db;
-    background:rgba(255,255,255,.97);
-}
-
-.future-card:hover{
-    border-color:#b30e6e;
+    padding:8px 14px;
+    border-radius:20px;
 }
 
 @media(max-width:768px){
 
-    .education{
-        padding:80px 6% 40px;
+    .table-img{
+        width:90px;
+        height:60px;
     }
 
-    .heading{
-        font-size:34px;
-    }
-
-    .education-img{
-        height:190px;
-    }
-
-    .education-content h3{
-        font-size:20px;
-    }
-
-    .education-content h4{
-        font-size:17px;
+    .education-table th,
+    .education-table td{
+        padding:10px;
+        font-size:14px;
     }
 
 }
