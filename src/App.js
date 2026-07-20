@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
@@ -11,22 +12,72 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+import ScrollTop from "./ScrollTop";
+import ScrollProgress from "./ScrollProgress";
+import FloatingSocial from "./FloatingSocial";
+import CursorGlow from "./CursorGlow";
+import Loader from "./Loader";
+
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+
+    const timer = setTimeout(() => {
+
+      setLoading(false);
+
+    },3000);
+
+    return () => clearTimeout(timer);
+
+  },[]);
+
+  if(loading){
+
+    return <Loader/>;
+
+  }
+
   return (
+
     <>
+
+      <CursorGlow />
+
+      <ScrollProgress />
+
+      <FloatingSocial />
+
       <Header />
+
       <Home />
+
       <About />
+
       <Education />
+
       <Achievements />
+
       <CollegeAchievements />
+
       <AssessmentCertificates />
+
       <Services />
+
       <Projects />
+
       <Contact />
+
       <Footer />
+
+      <ScrollTop />
+
     </>
+
   );
+
 }
 
 export default App;
