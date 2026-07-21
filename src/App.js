@@ -21,10 +21,20 @@ import LiveClock from "./LiveClock";
 
 import { playHover } from "./Sound";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 120,
+      easing: "ease-in-out",
+    });
+
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);

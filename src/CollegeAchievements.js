@@ -6,7 +6,11 @@ import reach26 from "./images/reach26.jpg";
 
 function CollegeAchievements() {
   return (
-    <section id="college-achievements" className="achievements">
+    <section
+      id="college-achievements"
+      className="college-achievements"
+      data-aos="fade-right"
+    >
       <div className="achievements-content">
 
         <h2>College Achievements</h2>

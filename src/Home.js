@@ -95,7 +95,11 @@ function Home() {
     };
   }, []);
     return (
-    <section id="home" className="home">
+    <section
+      id="home"
+      className="home"
+      data-aos="fade-up"
+    >
 
       <div className="home-content">
 

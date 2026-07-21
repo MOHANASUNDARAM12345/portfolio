@@ -12,7 +12,11 @@ import html from "./images/css-iitb.jpg";
 import css from "./images/css-iitb.jpg";
 function AssessmentCertificates() {
   return (
-    <section id="assessment-certificates" className="achievements">
+    <section
+      id="assessment-certificates"
+      className="assessment-certificates"
+      data-aos="zoom-in-up"
+    >
       <div className="achievements-content">
 
         <h2><h2>Technical Certifications</h2></h2>

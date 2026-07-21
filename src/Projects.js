@@ -3,7 +3,11 @@ import "./code.css";
 
 function Projects() {
   return (
-    <section id="projects" className="projects">
+    <section
+      id="projects"
+      className="projects"
+      data-aos="flip-left"
+    >
       <div className="portfolio-content">
 
         <h2>My Projects</h2>

@@ -3,7 +3,11 @@ import "./code.css";
 
 function Services() {
   return (
-    <section id="services" className="services">
+    <section 
+      id="services" 
+      className="services"
+      data-aos="fade-up"
+    >
       <div className="services-content">
 
         <h2>My Services</h2>

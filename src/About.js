@@ -3,7 +3,11 @@ import "./code.css";
 
 function About() {
   return (
-    <section id="about" className="about">
+    <section 
+      id="about" 
+      className="about"
+      data-aos="fade-right"
+    >
       <div className="about-content">
 
         <h2>About Me</h2>

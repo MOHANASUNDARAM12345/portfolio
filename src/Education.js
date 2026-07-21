@@ -8,7 +8,11 @@ import futureJob from "./images/future-job.jpg";
 
 function Education() {
   return (
-    <section className="education" id="education">
+    <section 
+      className="education" 
+      id="education"
+      data-aos="zoom-in"
+    >
 
       <h2 className="heading">
         My <span>Education</span>

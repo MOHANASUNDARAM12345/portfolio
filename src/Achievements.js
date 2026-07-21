@@ -58,7 +58,11 @@ function Achievements() {
   ];
 
   return (
-    <section id="school-achievements" className="achievements">
+    <section
+      id="school-achievements"
+      className="achievements"
+      data-aos="fade-left"
+    >
       <h2 className="section-title">School Achievements</h2>
 
       <div className="achievement-container">
