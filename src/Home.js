@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./code.css";
 import profile from "./images/myphoto.jpg";
 import Weather from "./Weather";
-
+import TypingAnimation from "./TypingAnimation";
+import { playClick, playSuccess } from "./Sound";
 function Home() {
   const [showPopup, setShowPopup] = useState(false);
   const [name, setName] = useState("");
@@ -69,7 +70,7 @@ function Home() {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-
+      playSuccess();
       alert("Resume Download Started!");
 
       setShowPopup(false);
@@ -98,10 +99,12 @@ function Home() {
 
       <div className="home-content">
 
-        <h1>Hi, I'm MOHANASUNDARAM</h1>
-
-        <h3>Web Developer</h3>
-
+        <h1>
+          Hi, I'm <span>MOHANASUNDARAM</span>
+        </h1>
+        <h3>
+          I'm a <TypingAnimation />
+        </h3>
         <p>
           I am an Information Technology student with a passion for Web
           Development. I have knowledge in Java, Python, HTML, CSS,
@@ -143,7 +146,10 @@ function Home() {
 
         <button
           className="cv-btn"
-          onClick={() => setShowPopup(true)}
+          onClick={() => {
+            playClick();
+            setShowPopup(true);
+          }}
         >
           <i className="bx bx-download"></i>
           <span>Download CV</span>
@@ -179,11 +185,19 @@ function Home() {
 
             <div className="popup-buttons">
 
-              <button onClick={handleDownload}>
+              <button
+              onClick={() => {
+                playClick();
+                handleDownload();
+              }}>
                 Submit & Download
-              </button>
+                </button>
 
-              <button onClick={() => setShowPopup(false)}>
+              <button
+              onClick={() => {
+                playClick();
+                setShowPopup(false);
+              }}>
                 Cancel
               </button>
 

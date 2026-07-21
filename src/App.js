@@ -18,38 +18,62 @@ import FloatingSocial from "./FloatingSocial";
 import CursorGlow from "./CursorGlow";
 import Loader from "./Loader";
 import LiveClock from "./LiveClock";
-function App() {
 
+import { playHover } from "./Sound";
+
+function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-
     const timer = setTimeout(() => {
-
       setLoading(false);
-
-    },3000);
+    }, 3000);
 
     return () => clearTimeout(timer);
+  }, []);
 
-  },[]);
+  useEffect(() => {
+    let lastPlay = 0;
 
-  if(loading){
+    const handleHover = (e) => {
+      const now = Date.now();
 
-    return <Loader/>;
+      if (now - lastPlay < 200) return;
 
+      const target = e.target;
+
+      if (
+        target.closest("button") ||
+        target.closest("a") ||
+        target.closest(".project-card") ||
+        target.closest(".service-box")
+      ) {
+        lastPlay = now;
+        playHover();
+      }
+    };
+
+    document.addEventListener("mouseover", handleHover);
+
+    return () => {
+      document.removeEventListener("mouseover", handleHover);
+    };
+  }, []);
+
+  if (loading) {
+    return <Loader />;
   }
 
   return (
-
     <>
-
       <CursorGlow />
 
       <ScrollProgress />
 
       <FloatingSocial />
+
       <LiveClock />
+
       <Header />
 
       <Home />
@@ -73,11 +97,8 @@ function App() {
       <Footer />
 
       <ScrollTop />
-
     </>
-
   );
-
 }
 
 export default App;

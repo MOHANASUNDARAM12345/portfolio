@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./ScrollTop.css";
+import { playWhoosh } from "./Sound";
 
 function ScrollTop() {
   const [visible, setVisible] = useState(false);
@@ -19,6 +20,8 @@ function ScrollTop() {
   }, []);
 
   const scrollToTop = () => {
+    playWhoosh();
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
