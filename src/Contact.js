@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./code.css";
+import { playClick, playSuccess } from "./Sound";
 
 function Contact() {
 
