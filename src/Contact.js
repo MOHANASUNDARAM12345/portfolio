@@ -71,7 +71,7 @@ function Contact() {
       )
 
       .then(() => {
-
+        playSuccess();
         alert("Message Sent Successfully!");
         e.target.reset();
 
