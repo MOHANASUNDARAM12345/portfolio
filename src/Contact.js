@@ -231,12 +231,16 @@ function Contact() {
             ></textarea>
 
 
-            <button type="submit" className="btn">
-
+            <button
+                type="submit"
+                className="btn"
+                onClick={() => {
+                  playClick();
+                }}
+              >
               <i className="bx bx-send"></i>
-              Send Message
-
-            </button>
+                  Send Message
+           </button>
 
 
           </form>
