@@ -689,6 +689,33 @@ body{
     color:#555;
     line-height:1.6;
 }
+/* College Achievements */
+
+.college-achievements .achievements-content{
+    max-width:100%;
+    text-align:center;
+}
+
+.college-achievements h2{
+    text-align:center;
+    font-size:40px;
+    color:#7114db;
+    margin-bottom:15px;
+}
+
+.college-achievements .subtitle{
+    text-align:center;
+    color:#64748B;
+    font-size:18px;
+    margin-bottom:40px;
+}
+
+.college-achievements .achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,350px));
+    justify-content:center;
+    gap:30px;
+}
 .popup-overlay{
     position:fixed;
     top:0;
@@ -749,4 +776,24 @@ body{
 
 .popup-buttons button:last-child{
     background:#dc3545;
+}
+/* Technical Certificates */
+
+.certificates{
+    padding:100px 10%;
+    background:linear-gradient(135deg,#F8FAFC,#EEF2FF,#FFFFFF);
+}
+
+.certificates h2{
+    text-align:center;
+    font-size:40px;
+    color:#7114db;
+    margin-bottom:15px;
+}
+
+.certificates .subtitle{
+    text-align:center;
+    color:#64748B;
+    font-size:18px;
+    margin-bottom:40px;
 }

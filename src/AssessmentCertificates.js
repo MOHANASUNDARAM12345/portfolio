@@ -13,13 +13,13 @@ import css from "./images/css-iitb.jpg";
 function AssessmentCertificates() {
   return (
     <section
-      id="assessment-certificates"
-      className="assessment-certificates"
+      id="certificates"
+      className="certificates"
       data-aos="zoom-in-up"
     >
       <div className="achievements-content">
 
-        <h2><h2>Technical Certifications</h2></h2>
+        <h2>Technical Certifications</h2>
 
         <p className="subtitle">
             Certifications earned through online assessments, examinations and skill evaluations.
